@@ -8,11 +8,13 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      referrerpolicy="no-referrer"
     />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <nav>
       <a href=""><img src="assets/SURED.png" alt="" /></a>
@@ -64,5 +66,74 @@
         </div>
       </div>
     </section>
+    <div class="courses">
+      <h2>ALL COURSES</h2>
+      <p id="l">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vel!</p>
+      <div class="container">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="assets/sketch (5).png" alt="" />
+              <!-- <i clas fa-pen-ruler"></i> -->
+
+              <h3>Design</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                quae nostrum laudantium porro culpa, libero accusamus ab labore?
+              </p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="assets/sketch (5).png" alt="" />
+              <h3>Design</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                quae nostrum laudantium porro culpa, libero accusamus ab labore?
+              </p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="assets/sketch (5).png" alt="" />
+              <h3>Design</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                quae nostrum laudantium porro culpa, libero accusamus ab labore?
+              </p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      var headerbg = document.getElementById('home')
+      window.addEventListener('scroll',function(){
+        headerbg.style.opacity = 1 - +window.pageYOffset/550+''
+        headerbg.style.backgroundPositionY = - +window.pageYOffset/2+'px'
+      })
+    </script>
+
   </body>
 </html>
