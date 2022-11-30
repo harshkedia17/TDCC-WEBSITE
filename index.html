@@ -24,7 +24,8 @@
           <li><a href="">About</a></li>
           <li><a href="">All Courses</a></li>
           <li><a href="">Schools</a></li>
-          <li><a href="" class="bt">Sign In / Register</a></li>
+          <!-- <li><a href="" class="bt">Sign In / Register</a></li> -->
+        <a href="" id="sign">Sign In / Register</a>
         </ul>
       </div>
     </nav>
@@ -123,8 +124,66 @@
             </div>
           </div>
         </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="assets/sketch (5).png" alt="" />
+              <h3>Design</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                quae nostrum laudantium porro culpa, libero accusamus ab labore?
+              </p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="assets/sketch (5).png" alt="" />
+              <h3>Design</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                quae nostrum laudantium porro culpa, libero accusamus ab labore?
+              </p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <img src="assets/sketch (5).png" alt="" />
+              <h3>Design1</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                quae nostrum laudantium porro culpa, libero accusamus ab labore?
+              </p>
+              <a href="">Read More</a>
+            </div>
+          </div>
+        </div>
       </div>
+      <div id="load-more"> load more </div>
+      <div id="load-less">load less</div>
     </div>
+
+
+
+
+    
 
 
     <script type="text/javascript">
@@ -133,6 +192,40 @@
         headerbg.style.opacity = 1 - +window.pageYOffset/550+''
         headerbg.style.backgroundPositionY = - +window.pageYOffset/2+'px'
       })
+
+
+      let loadmorebtn = document.getElementById('load-more');
+      let loadlessbtn = document.getElementById('load-less');
+      let currentItem = 3;
+
+      loadmorebtn.onclick = () => {
+        let boxes = [...document.querySelectorAll('.container .card')];
+        for (let i = 0; i < currentItem+3; i++) {
+          boxes[i].style.display = 'inline-block';
+          }
+          currentItem += 3;
+
+        if(currentItem>=boxes.length){
+          loadmorebtn.style.display = 'none';
+          loadlessbtn.style.display = 'inline-block';
+          
+        }
+      }
+
+      loadlessbtn.onclick = () => {
+        let boxes = [...document.querySelectorAll('.container .card')];
+        for (let i = 3; i < currentItem; i++) {
+          boxes[i].style.display = 'none';
+          }
+          currentItem -= 3;
+
+        if(currentItem<=3){
+          loadlessbtn.style.display = 'none';
+          loadmorebtn.style.display = 'inline-block';
+          
+        }
+      }
+
     </script>
 
   </body>

@@ -90,6 +90,23 @@ nav a img {
   width: 100%;
 }
 
+#sign{
+  margin-left: 25px;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 15px;
+  text-decoration: none;
+  background: #7373d0;
+  color: white;
+  font-family: 'Poppins';
+  border-radius: 40px;
+}
+#sign:hover{
+  color: #000000;
+  background: #9e9eea;
+
+}
+
 #home {
   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
     url(assets/college_students.jpg);
@@ -245,6 +262,7 @@ nav a img {
 
 .courses{
   padding: 5vw 8vw 4vw 8vw ;
+  /* justify-content: center; */
 }
 
 .courses h2{
@@ -263,13 +281,22 @@ nav a img {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  /* margin-top: 40px; */
+  margin-top: 20px;
   flex-wrap: wrap;
 }
 
 .container .card{
   position: relative;;
+  display: none;
 }
+
+.container .card:nth-child(1),
+.container .card:nth-child(2),
+.container .card:nth-child(3){
+  display: inline-block ;
+}
+
+
 
 .container .card .face{
   width: 300px;
@@ -291,7 +318,7 @@ nav a img {
 
 .container .card:hover .face.face1{
    transform: translateY(0);
-   background: #ff0057;
+   background: #4891ff;
 }
 
 
@@ -354,3 +381,46 @@ nav a img {
   
 }
 
+#load-more{
+  margin-top: 40px;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+  background: #fff;
+  /* align-items: center; */
+  /* justify-content: center; */
+  cursor: pointer;
+  margin-left: 550px;
+  text-transform: uppercase;
+  
+}
+
+#load-more:hover{
+  background-color: crimson;
+  border-color: crimson;
+  color:#fff;
+}
+
+#load-less{
+  margin-top: 40px;
+  display: none;
+  padding: 10px 30px;
+  border: 1px solid #334;
+  color: #334;
+  font-size: 16px;
+  background: #fff;
+  /* align-items: center; */
+  /* justify-content: center; */
+  cursor: pointer;
+  margin-left: 575px;
+  text-transform: uppercase;
+  
+}
+
+#load-more:less{
+  background-color: crimson;
+  border-color: crimson;
+  color:#fff;
+}
