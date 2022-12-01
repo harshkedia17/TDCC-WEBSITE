@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
       referrerpolicy="no-referrer"
     />
+   
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -25,7 +26,7 @@
           <li><a href="">All Courses</a></li>
           <li><a href="">Schools</a></li>
           <!-- <li><a href="" class="bt">Sign In / Register</a></li> -->
-        <a href="" id="sign">Sign In / Register</a>
+          <a href="" id="sign">Sign In / Register</a>
         </ul>
       </div>
     </nav>
@@ -69,7 +70,9 @@
     </section>
     <div class="courses">
       <h2>ALL COURSES</h2>
-      <p id="l">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vel!</p>
+      <p id="l">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vel!
+      </p>
       <div class="container">
         <div class="card">
           <div class="face face1">
@@ -176,57 +179,91 @@
           </div>
         </div>
       </div>
-      <div id="load-more"> load more </div>
+      <div id="load-more">load more</div>
       <div id="load-less">load less</div>
     </div>
 
-
-
-
-    
-
+    <section class="campus">
+      <h1>ALL SCHOOLS OFFERING TDCC</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="row">
+        <div class="campuscol">
+          <img src="set.jpg" alt="" />
+          <div class="layer">
+            <h3>SET</h3>
+          </div>
+        </div>
+        <div class="campuscol">
+          <img src="shs.jpg" alt="" />
+          <div class="layer">
+            <h3>SHS</h3>
+          </div>
+        </div>
+        <div class="campuscol">
+          <img src="sod.jpg" alt="" />
+          <div class="layer">
+            <h3>SOD</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="campuscol">
+          <img src="saa.jpg" alt="" />
+          <div class="layer">
+            <h3>SAA</h3>
+          </div>
+        </div>
+        <div class="campuscol">
+          <img src="sob.jpg" alt="" />
+          <div class="layer">
+            <h3>SOB</h3>
+          </div>
+        </div>
+        <div class="campuscol">
+          <img src="sol.jpg" alt="" />
+          <div class="layer">
+            <h3>SOL</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script type="text/javascript">
-      var headerbg = document.getElementById('home')
-      window.addEventListener('scroll',function(){
-        headerbg.style.opacity = 1 - +window.pageYOffset/550+''
-        headerbg.style.backgroundPositionY = - +window.pageYOffset/2+'px'
-      })
+      var headerbg = document.getElementById("home");
+      window.addEventListener("scroll", function () {
+        headerbg.style.opacity = 1 - +window.pageYOffset / 550 + "";
+        headerbg.style.backgroundPositionY = -+window.pageYOffset / 2 + "px";
+      });
 
-
-      let loadmorebtn = document.getElementById('load-more');
-      let loadlessbtn = document.getElementById('load-less');
+      let loadmorebtn = document.getElementById("load-more");
+      let loadlessbtn = document.getElementById("load-less");
       let currentItem = 3;
 
       loadmorebtn.onclick = () => {
-        let boxes = [...document.querySelectorAll('.container .card')];
-        for (let i = 0; i < currentItem+3; i++) {
-          boxes[i].style.display = 'inline-block';
-          }
-          currentItem += 3;
-
-        if(currentItem>=boxes.length){
-          loadmorebtn.style.display = 'none';
-          loadlessbtn.style.display = 'inline-block';
-          
+        let boxes = [...document.querySelectorAll(".container .card")];
+        for (let i = 0; i < currentItem + 3; i++) {
+          boxes[i].style.display = "inline-block";
         }
-      }
+        currentItem += 3;
+
+        if (currentItem >= boxes.length) {
+          loadmorebtn.style.display = "none";
+          loadlessbtn.style.display = "inline-block";
+        }
+      };
 
       loadlessbtn.onclick = () => {
-        let boxes = [...document.querySelectorAll('.container .card')];
+        let boxes = [...document.querySelectorAll(".container .card")];
         for (let i = 3; i < currentItem; i++) {
-          boxes[i].style.display = 'none';
-          }
-          currentItem -= 3;
-
-        if(currentItem<=3){
-          loadlessbtn.style.display = 'none';
-          loadmorebtn.style.display = 'inline-block';
-          
+          boxes[i].style.display = "none";
         }
-      }
+        currentItem -= 3;
 
+        if (currentItem <= 3) {
+          loadlessbtn.style.display = "none";
+          loadmorebtn.style.display = "inline-block";
+        }
+      };
     </script>
-
   </body>
 </html>
