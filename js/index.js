@@ -17,3 +17,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+document.querySelector(".campuscol").addEventListener("click", () => {
+  window.location.href = "all-courses.html";
+});
