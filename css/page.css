@@ -92,7 +92,11 @@ nav a img {
   margin: auto;
   transition: 0.5s;
 }
-.nav ul li:hover::after,#active::after {
+.nav ul li:hover::after {
+  width: 100%;
+}
+
+#active::after{
   width: 100%;
 }
 

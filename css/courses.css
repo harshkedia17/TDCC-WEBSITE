@@ -87,6 +87,9 @@
   .nav ul li:hover::after {
     width: 100%;
   }
+  #active::after{
+    width: 100%;
+  }
   
   #sign{
     margin-left: 25px;

@@ -176,7 +176,7 @@ form.sign-in-form {
   font-size: 1.1rem;
 }
 
-.input-field input {
+.input-field input,select {
   background: none;
   outline: none;
   border: none;
@@ -184,6 +184,11 @@ form.sign-in-form {
   font-weight: 600;
   font-size: 1.1rem;
   color: #333;
+}
+
+option::placeholder{
+  color: #aaa;
+  font-weight: 500;
 }
 
 .input-field input::placeholder {

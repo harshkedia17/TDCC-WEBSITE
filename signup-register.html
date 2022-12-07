@@ -8,12 +8,13 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/login.css" />
-    <title>Sign in & Sign up Form</title>
+    <title>Sign in & Sign up</title>
+    <link rel="shortcut icon" href="assets/SURED.png" type="image/x-icon" />
   </head>
   <body>
 
     <nav>
-      <a href=""><img src="assets/SURED.png" alt="" /></a>
+      <a href="index.html"><img src="assets/SURED.png" alt="" /></a>
       <div class="nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -30,8 +31,8 @@
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="#" class="sign-in-form">
-            <h2 class="title">Log in</h2>
+          <form action="all-courses.html" class="sign-in-form">
+            <h2 class="title">LOG IN</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
               <input type="text" placeholder="College Email Address" />
@@ -40,11 +41,11 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="Login" class="btn solid"/>
           </form>
 
           <form action="#" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
+            <h2 class="title">SIGN UP</h2>
             <div class="input-field">
                 <i class="fas fa-envelope"></i>
               <input type="email" placeholder="College Email Address" />
@@ -55,7 +56,17 @@
             </div>
             <div class="input-field">
                 <i class="fas fa-school"></i>
-                <input type="text" placeholder="School Name" />
+                <!-- <input type="text" placeholder="School Name" /> -->
+                <select  name="school" id="lang">
+                  <option value="none" selected disabled hidden>Select an Option</option>
+                  <option value="School of Technology">School of Technology</option>
+                  <option value="School of Technology">School of Business</option>
+                  <option value="School of Technology">School of Health Science</option>
+                  <option value="School of Technology">School of Art & Architechture</option>
+                  <option value="School of Technology">School of Design</option>
+                  <option value="School of Technology">School of Law</option>
+                  <option value="School of Technology">School of Planning</option>
+                </select>
             </div>
 
             <div class="input-field">
