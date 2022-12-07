@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sushant University TDCC</title>
-
+    <link rel="shortcut icon" href="assets/SURED.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
       referrerpolicy="no-referrer"
     />
-   
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
@@ -21,12 +28,12 @@
       <a href=""><img src="assets/SURED.png" alt="" /></a>
       <div class="nav">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">All Courses</a></li>
-          <li><a href="">Schools</a></li>
+          <li id="active"><a href="index.html">Home</a></li>
+          <li><a href="indiviual-page.html">About</a></li>
+          <li><a href="all-courses.html">All Courses</a></li>
+          <!-- <li><a href="">Schools</a></li> -->
           <!-- <li><a href="" class="bt">Sign In / Register</a></li> -->
-          <a href="" id="sign">Sign In / Register</a>
+          <a href="signup-register.html" id="sign">Sign In / Register</a>
         </ul>
       </div>
     </nav>
@@ -68,139 +75,25 @@
         </div>
       </div>
     </section>
-    <div class="courses">
-      <h2>ALL COURSES</h2>
-      <p id="l">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, vel!
-      </p>
-      <div class="container">
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="assets/sketch (5).png" alt="" />
-              <!-- <i clas fa-pen-ruler"></i> -->
-
-              <h3>Design</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                quae nostrum laudantium porro culpa, libero accusamus ab labore?
-              </p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="assets/sketch (5).png" alt="" />
-              <h3>Design</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                quae nostrum laudantium porro culpa, libero accusamus ab labore?
-              </p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="assets/sketch (5).png" alt="" />
-              <h3>Design</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                quae nostrum laudantium porro culpa, libero accusamus ab labore?
-              </p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="assets/sketch (5).png" alt="" />
-              <h3>Design</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                quae nostrum laudantium porro culpa, libero accusamus ab labore?
-              </p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="assets/sketch (5).png" alt="" />
-              <h3>Design</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                quae nostrum laudantium porro culpa, libero accusamus ab labore?
-              </p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="face face1">
-            <div class="content">
-              <img src="assets/sketch (5).png" alt="" />
-              <h3>Design1</h3>
-            </div>
-          </div>
-          <div class="face face2">
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                quae nostrum laudantium porro culpa, libero accusamus ab labore?
-              </p>
-              <a href="">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="load-more">load more</div>
-      <div id="load-less">load less</div>
-    </div>
 
     <section class="campus">
       <h1>ALL SCHOOLS OFFERING TDCC</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
       <div class="row">
         <div class="campuscol">
-          <img src="set.jpg" alt="" />
+          <img src="assets/set.jpg" alt="" />
           <div class="layer">
             <h3>SET</h3>
           </div>
         </div>
         <div class="campuscol">
-          <img src="shs.jpg" alt="" />
+          <img src="assets\shs.jpg" alt="" />
           <div class="layer">
             <h3>SHS</h3>
           </div>
         </div>
         <div class="campuscol">
-          <img src="sod.jpg" alt="" />
+          <img src="assets/sod.jpg" alt="" />
           <div class="layer">
             <h3>SOD</h3>
           </div>
@@ -208,19 +101,19 @@
       </div>
       <div class="row">
         <div class="campuscol">
-          <img src="saa.jpg" alt="" />
+          <img src="assets/saa.jpg" alt="" />
           <div class="layer">
             <h3>SAA</h3>
           </div>
         </div>
         <div class="campuscol">
-          <img src="sob.jpg" alt="" />
+          <img src="assets/sob.jpg" alt="" />
           <div class="layer">
             <h3>SOB</h3>
           </div>
         </div>
         <div class="campuscol">
-          <img src="sol.jpg" alt="" />
+          <img src="assets/sol.jpg" alt="" />
           <div class="layer">
             <h3>SOL</h3>
           </div>
@@ -228,42 +121,123 @@
       </div>
     </section>
 
-    <script type="text/javascript">
-      var headerbg = document.getElementById("home");
-      window.addEventListener("scroll", function () {
-        headerbg.style.opacity = 1 - +window.pageYOffset / 550 + "";
-        headerbg.style.backgroundPositionY = -+window.pageYOffset / 2 + "px";
-      });
+    <section class="container">
+      <div class="testimonial mySwiper">
+        <h2>Reviews of Various Courses</h2>
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="assets/washington.png" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
 
-      let loadmorebtn = document.getElementById("load-more");
-      let loadlessbtn = document.getElementById("load-less");
-      let currentItem = 3;
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
 
-      loadmorebtn.onclick = () => {
-        let boxes = [...document.querySelectorAll(".container .card")];
-        for (let i = 0; i < currentItem + 3; i++) {
-          boxes[i].style.display = "inline-block";
-        }
-        currentItem += 3;
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/college_students.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
 
-        if (currentItem >= boxes.length) {
-          loadmorebtn.style.display = "none";
-          loadlessbtn.style.display = "inline-block";
-        }
-      };
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
 
-      loadlessbtn.onclick = () => {
-        let boxes = [...document.querySelectorAll(".container .card")];
-        for (let i = 3; i < currentItem; i++) {
-          boxes[i].style.display = "none";
-        }
-        currentItem -= 3;
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/college_students.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
 
-        if (currentItem <= 3) {
-          loadlessbtn.style.display = "none";
-          loadmorebtn.style.display = "inline-block";
-        }
-      };
-    </script>
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>For Any Query Reach Out to us</h2>
+      <a id="mail">Contact Us</a>
+    </section>
+
+    <footer class="footer">
+      <div class="container1">
+        <div class="row-foot">
+          <div class="footer-col">
+            <h4>Sushant University</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Campus</a></li>
+              <li><a href="#">Schools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>TDCC</h4>
+            <ul>
+              <li><a href="#">About TDCC</a></li>
+              <li><a href="#">TDCC Courses</a></li>
+              <li><a href="#">SignUp/Register</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">Platform Lecture Series</a></li>
+              <li><a href="#">Scholarships</a></li>
+              <li><a href="#">UGC Status</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/SushantUniversity/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/SushantUni"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/sushant.university/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/school/sushant-university/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
   </body>
 </html>
